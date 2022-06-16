@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Home</title>
+    <style media="screen">
+        body {
+            background-image: url('https://cdn.ps.emap.com/wp-content/uploads/sites/3/2018/06/Lungs_respiratory-1024x682.jpg');
+            height: 100%;
+            background-position: right center;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: 1024px 684px;
+        }
+
+        .card {
+            background-color: #82d3fc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-lg-12">
+            <form action="{{ url_for('result') }}" method="post">
+                <br>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="card"
+                            style="width: 58%; height:20%; margin-top:1px; margin-bottom: 20px;text-decoration: underline; text-align:right;">
+                            <div class="card-header" style="text-align: center">
+                                <h1>Emperical Analysis and Performance Evaluation of  Different Lung Cancer
+                                    Classification Technique using Machine Learning:</h1>
+                            </div>
+                            <div class="card-body">
+                                <div class="col-md-12 form-group" style="text-align: center">
+                                    <h4>Want to predict the Lung Cancer ? Try filling the details....</h4>
+                                    <br>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="col-lg-12">
+                                        <form action="{{ url_for('result') }}" method="post">
+                                            <div class="form-group" style="text-align: center">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>GENDER :</b></label>
+                                                        <input type="text" class="form-control" id="GENDER"
+                                                            name="GENDER" value=""
+                                                            placeholder="1 for Male,0 for Female">
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>AGE :</b></label>
+                                                        <input type="text" class="form-control" id="AGE" name="AGE"
+                                                            value="" placeholder="Enter your Age">
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>SMOKING :</b></label>
+                                                        <input type="text" class="form-control" id="SMOKING"
+                                                            name="SMOKING" value="" placeholder="2 for Yes, 1 for No">
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>YELLOW_FINGERS :</b></label>
+                                                        <input type="text" class="form-control" id="YELLOW_FINGERS"
+                                                            value="" name="YELLOW_FINGERS"
+                                                            placeholder="2 for Yes, 1 for No">
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>ANXIETY :</b></label>
+                                                        <input type="text" class="form-control" id="ANXIETY"
+                                                            name="ANXIETY" value="" placeholder="2 for Yes, 1 for No">
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>PEER_PRESSURE :</b></label>
+
+                                                        <input type="text" class="form-control" id="PEER_PRESSURE"
+                                                            name="PEER_PRESSURE" value=""
+                                                            placeholder="2 for Yes, 1 for No">
+                                                        <br>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>FATIGUE :</b></label>
+
+                                                        <input type="text" class="form-control" id="FATIGUE"
+                                                            name="FATIGUE" value="" placeholder="2 for Yes, 1 for No">
+
+                                                        <br>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b> CHRONIC_DISEASE :</b></label>
+
+                                                        <input type="text" class="form-control" id=" CHRONIC_DISEASE"
+                                                            name=" CHRONIC_DISEASE" value=""
+                                                            placeholder="2 for Yes, 1 for No">
+
+                                                        <br>
+                                                    </div>
+
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b> ALLERGY :</b></label>
+
+                                                        <input type="text" class="form-control" id=" ALLERGY"
+                                                            name=" ALLERGY" value="" placeholder="2 for Yes, 1 for No">
+
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>ALCOHOL_CONSUMING:</b></label>
+
+                                                        <input type="text" class="form-control" id="ALCOHOL_CONSUMING"
+                                                            name="ALCOHOL_CONSUMING" value=""
+                                                            placeholder="2 for Yes, 1 for No">
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>WHEEZING :</b></label>
+
+                                                        <input type="text" class="form-control" id="WHEEZING"
+                                                            name="WHEEZING" value="" placeholder="2 for Yes, 1 for No">
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>COUGHING :</b></label>
+
+                                                        <input type="text" class="form-control" id="COUGHING"
+                                                            name="COUGHING" value="" placeholder="2 for Yes, 1 for No">
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>SHORTNESS_OF_BREATH:</b></label>
+
+                                                        <input type="text" class="form-control" id="SHORTNESS_OF_BREATH"
+                                                            name="SHORTNESS_OF_BREATH" value=""
+                                                            placeholder="2 for Yes, 1 for No">
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>SWALLOWING_DIFFICULTY:</b></label>
+
+                                                        <input type="text" class="form-control"
+                                                            id="SWALLOWING_DIFFICULTY" name="SWALLOWING_DIFFICULTY"
+                                                            value="" placeholder="2 for Yes, 1 for No">
+                                                        <br>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-4" style="text-align: center">
+                                                        <label><b>CHEST_PAIN :</b></label>
+
+                                                        <input type="text" class="form-control" id="CHEST_PAIN"
+                                                            name="CHEST_PAIN" value=""
+                                                            placeholder="2 for Yes, 1 for No">
+                                                        <br>
+                                                    </div>
+                                                    <br>
+
+
+
+                                                    <div class="col-md-12 form-group" style="text-align: center">
+                                                        <button type="submit" class="btn btn-dark">Submit</button>
+                                                    </div>
+                                                    <br>
+                                                    <div class="col-md-12 form-group" style="text-align:center">
+                                                        <h3>{{Predict}}</h3>
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                        crossorigin="anonymous"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
