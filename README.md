@@ -58,4 +58,7 @@ The SVM Model Gives better result then KNN by applying hyperparameter tuning on 
 ![camparison](https://user-images.githubusercontent.com/84726790/184611901-25399da2-3e56-4198-ad56-59be0db1663e.png)
 
 ## Project Report -
-You can download the project report here :[projct report.pdf](https://github.com/sakshijha8/Lung_Cancer-Detection--End-to-End-Project/files/9336348/projct.report.pdf)
+You can download the project report here : [projct report.pdf](https://github.com/sakshijha8/Lung_Cancer-Detection--End-to-End-Project/files/9336348/projct.report.pdf)
+
+## Website Link -  
+http://127.0.0.1:7368/
