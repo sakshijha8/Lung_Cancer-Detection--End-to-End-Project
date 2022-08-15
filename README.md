@@ -8,3 +8,15 @@ Lung cancer can cause complications, such as: Shortness of breath. People with l
 ## Problem Statement -
 In this project , We predict whether the person is diagnosed with Lung cancer or not using different - different Algorithm's.
 
+## Technical aspect -
+*  Python 3.9
+*	Front-end: HTML, CSS
+*	Back-end: Flask
+*	IDE: Jupyter Notebook, Visual Studio
+
+## How to run this app -
+Code is written in Python 3.9. If you don't have python installed on your system, click here https://www.python.org/downloads/ to install.
+* Create virtual environment - *conda create -n myenv python=3.9*
+*	Activate the environment - *conda activate myenv*
+*	Install the packages - *pip install -r requirements.txt*
+*	Run the app - *python main.py*
