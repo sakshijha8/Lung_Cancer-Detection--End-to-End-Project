@@ -38,11 +38,9 @@ Code is written in Python 3.9. If you don't have python installed on your system
    You can Download the data from here- [LungCancer](https://www.kaggle.com/datasets/sakshi20008/survey-lung-cancer-prediction)
    
  ## Data Pre-processing
-*  Missing values handling by Simple imputation (median strategy)
 *	Outliers detection and removal by boxplot and percentile methods
 *	Categorical features handling by ordinal encoding and label encoding
 *	Feature scaling done by Standard Scalar method
 *	Imbalanced dataset handled by SMOTE
-*	Feature selection done by forward feature selection
 
 
