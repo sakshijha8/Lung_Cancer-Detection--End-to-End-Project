@@ -22,4 +22,15 @@ Code is written in Python 3.9. If you don't have python installed on your system
 *	Run the app - *python main.py*
 
 # Workflow-
+## Libraries Used in This Project - 
+   
+● Numpy: Used for Mathematical Operations.
+
+● Pandas: Used for DataFrame Operations.
+
+● Seaborn and Matplotlib: Used for Data Visualizations.
+
+● Ipywidgets: Used for Interactive Analysis.
+
+● Sklearn: Used for Machine Learning Algorithms
 
