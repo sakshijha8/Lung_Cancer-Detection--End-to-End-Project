@@ -34,3 +34,6 @@ Code is written in Python 3.9. If you don't have python installed on your system
 
 ● Sklearn: Used for Machine Learning Algorithms
 
+ ## Data Collection -
+   You can Download the data from here- [LungCancer](https://www.kaggle.com/datasets/sakshi20008/survey-lung-cancer-prediction)
+
