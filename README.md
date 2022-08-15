@@ -43,4 +43,17 @@ Code is written in Python 3.9. If you don't have python installed on your system
 *	Feature scaling done by Standard Scalar method
 *	Imbalanced dataset handled by SMOTE
 
+## Model Creation and Evaluation
+* Used classification algorithms like Support Vector Machine & K- Nearest Neighbour.
+* Support Vector Machine gives better result.
+* Hyper parameter tuning was performed for better accuracy.
+* Model performance evaluated based on accuracy, confusion matrix & classification report.
+
+### Confusion Matrix of KNN and SVM -
+![cm knn](https://user-images.githubusercontent.com/84726790/184611490-2011ad19-633f-4887-bc6b-63e390ae27d3.png)![cm svc](https://user-images.githubusercontent.com/84726790/184611675-d6ebd8ce-6b12-4f72-a68d-a651381310a2.png)
+
+## Result & Comparison  Graph -
+The SVM Model Gives better result then KNN by applying hyperparameter tuning on both.
+
+![camparison](https://user-images.githubusercontent.com/84726790/184611901-25399da2-3e56-4198-ad56-59be0db1663e.png)
 
