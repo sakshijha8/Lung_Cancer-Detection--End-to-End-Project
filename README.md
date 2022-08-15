@@ -20,3 +20,6 @@ Code is written in Python 3.9. If you don't have python installed on your system
 *	Activate the environment - *conda activate myenv*
 *	Install the packages - *pip install -r requirements.txt*
 *	Run the app - *python main.py*
+
+# Workflow-
+
